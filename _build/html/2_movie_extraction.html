@@ -57,10 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '2_movie_extraction';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2_movie_extraction_old';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Using Tmux" href="1_using_tmux.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,7 +179,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0_server_initialization.html">Set Up the Enviroment</a></li>
 
 
@@ -189,7 +190,7 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Movie Extraction Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_movie_extraction.html">Movie Extraction Tutorial</a></li>
 </ul>
 
     </div>
@@ -261,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_movie_extraction.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_movie_extraction_old.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +292,7 @@
       
       
       
-      <li><a href="_sources/2_movie_extraction.ipynb" target="_blank"
+      <li><a href="_sources/2_movie_extraction_old.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -431,52 +432,52 @@ document.write(`
 <section id="step-0-makemkv-opening-makemkv">
 <h4>Step 0 - MakeMKV - opening MakeMKV<a class="headerlink" href="#step-0-makemkv-opening-makemkv" title="Link to this heading">#</a></h4>
 <p>After opening MakeMKV you should see the following GUI.
-<img alt="alt text" src="img/makemkv%20step%200.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_0.png" /></p>
 </section>
 <section id="step-1-makemkv-begin-extraction">
 <h4>Step 1 - MakeMKV - begin extraction<a class="headerlink" href="#step-1-makemkv-begin-extraction" title="Link to this heading">#</a></h4>
 <p>Insert the DVD into the optical reader (depending on your system, the movie may autoplay). The GUI should update to indicate that a DVD has been detected.</p>
 <p>Select the “download folder” icon to begin extracting the data from the DVD.
-<img alt="alt text" src="img/makemkv%20step%201.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_1.png" /></p>
 </section>
 <section id="step-2-makemkv-choose-save-directory">
 <h4>Step 2 - MakeMKV - choose save directory<a class="headerlink" href="#step-2-makemkv-choose-save-directory" title="Link to this heading">#</a></h4>
 <p>You will be prompted with a save location for the extracted files.</p>
 <p>If you are doing this on your personal machine, make sure to keep note of where you extract DVDs, as you will need this location later.
-<img alt="alt text" src="img/makemkv%20step%202.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_2.png" /></p>
 <p>If you are doing this on the lab Mac, we have a folder workflow:</p>
 <p>coconeurolab &gt; Desktop &gt; movies &gt; “name of movie” &gt; …
-<img alt="alt text" src="img/makemkv%20step%204.png" />
-<img alt="alt text" src="img/makemkv%20step%205.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_4.png" />
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_5.png" /></p>
 </section>
 <section id="step-3-1-1-makemkv-iso-files">
 <h4>Step 3.1.1 - MakeMKV - ISO files<a class="headerlink" href="#step-3-1-1-makemkv-iso-files" title="Link to this heading">#</a></h4>
 <p>After extraction, there should be an iso file in the directory you specified in the previous step. In this step, we will load the iso file into MakeMKV. To do so, select the “open files” icon.
-<img alt="alt text" src="img/makemkv%20step%208.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_8.png" /></p>
 <p>Then, select the iso file that you just created.
-<img alt="alt text" src="img/makemkv%20step%209.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_9.png" /></p>
 </section>
 <section id="step-3-1-2-makemkv-converting-iso-to-mkv">
 <h4>Step 3.1.2 - MakeMKV - Converting ISO to MKV<a class="headerlink" href="#step-3-1-2-makemkv-converting-iso-to-mkv" title="Link to this heading">#</a></h4>
 <p>After opening the iso, the GUI should update to the following screen. Click the “Make MKV” icon to begin converting the iso into an .mkv file.
-<img alt="alt text" src="img/makemkv%20step%2010.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_10.png" /></p>
 </section>
 <section id="step-3-1-3-makemkv-finished">
 <h4>Step 3.1.3 - MakeMKV - Finished!<a class="headerlink" href="#step-3-1-3-makemkv-finished" title="Link to this heading">#</a></h4>
 <p>After this is complete, you should see the following:
-<img alt="alt text" src="img/makemkv%20step%2012.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_12.png" /></p>
 <p>This .mkv file will be used in Handbrake, so make sure to keep track of where it was saved.</p>
 </section>
 <section id="step-3-2-1-makemkv-bdmv-files">
 <h4>Step 3.2.1 - MakeMKV - BDMV files<a class="headerlink" href="#step-3-2-1-makemkv-bdmv-files" title="Link to this heading">#</a></h4>
 <p>Older DVDs will tend to be saved as ISO files, while newer DVDs/Blurays will be in the BDMV format. After extracting the DVD in Step 1 and 2, you may see a BDMV library in your extract directory.
-<img alt="alt text" src="img/makemkv%20step%2013.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_13.png" /></p>
 <p>Select the BDMV file.</p>
 </section>
 <section id="step-3-2-2-makemkv-converting-bdmv-to-mkv">
 <h4>Step 3.2.2 - MakeMKV - Converting BDMV to MKV<a class="headerlink" href="#step-3-2-2-makemkv-converting-bdmv-to-mkv" title="Link to this heading">#</a></h4>
 <p>After selecting the BDMV file, you should see a list of titles on the left pane. Before converting to .mkv, be sure to select the title with the largest file size (this is almost always the movie itself).
-<img alt="alt text" src="img/makemkv%20step%2014.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/makemkv_step_14.png" /></p>
 </section>
 <section id="step-3-2-3-makemkv-finished">
 <h4>Step 3.2.3 - MakeMKV - Finished!<a class="headerlink" href="#step-3-2-3-makemkv-finished" title="Link to this heading">#</a></h4>
@@ -488,12 +489,12 @@ document.write(`
 <section id="step-4-handbrake-opening-source-files">
 <h4>Step 4 - HandBrake - opening source files<a class="headerlink" href="#step-4-handbrake-opening-source-files" title="Link to this heading">#</a></h4>
 <p>Next, open up Handbrake. You should see a GUI similar to the one below. Select the “Open Source” icon.
-<img alt="alt text" src="img/handbrake%20step%200.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/handbrake_step_0.png" /></p>
 </section>
 <section id="step-5-handbrake-loading-mkv-files">
 <h4>Step 5 - HandBrake - loading .mkv files<a class="headerlink" href="#step-5-handbrake-loading-mkv-files" title="Link to this heading">#</a></h4>
 <p>Go to the directory in which your .mkv files were created, and select the .mkv file.
-<img alt="alt text" src="img/handbrake%20step%201.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/handbrake_step_1.png" /></p>
 </section>
 <section id="step-6-handbrake-setup">
 <h4>Step 6 - HandBrake - setup<a class="headerlink" href="#step-6-handbrake-setup" title="Link to this heading">#</a></h4>
@@ -502,13 +503,13 @@ document.write(`
 <p>Make sure to change the output filename and output directory at the bottom of the GUI.</p>
 <p>If working on the lab Mac, the output directory should be:</p>
 <p>coconeurolab &gt; Desktop &gt; Movies after conversion
-<img alt="alt text" src="img/handbrake%20step%202.png" />
-<img alt="alt text" src="img/handbrake%20step%203.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/handbrake_step_2.png" />
+<img alt="alt text" src="_static/img_movie_extraction/handbrake_step_3.png" /></p>
 </section>
 <section id="step-7-handbrake-convert-to-mp4">
 <h4>Step 7 - HandBrake - convert to .mp4<a class="headerlink" href="#step-7-handbrake-convert-to-mp4" title="Link to this heading">#</a></h4>
 <p>After everything is set up, click the “Start” icon to begin conversion.
-<img alt="alt text" src="img/handbrake%20step%204.png" /></p>
+<img alt="alt text" src="_static/img_movie_extraction/handbrake_step_4.png" /></p>
 </section>
 <section id="step-8-handbrake-finished">
 <h4>Step 8 - HandBrake - Finished!<a class="headerlink" href="#step-8-handbrake-finished" title="Link to this heading">#</a></h4>
@@ -548,15 +549,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="1_using_tmux.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Using Tmux</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
