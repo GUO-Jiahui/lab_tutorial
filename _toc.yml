@@ -6,5 +6,6 @@ root: intro
 chapters:
 - file: 0_server_initialization.ipynb
 - file: 1_using_tmux.ipynb
+- file: 2_movie_extraction.ipynb
 # - file: notebooks
 # - file: markdown-notebooks
