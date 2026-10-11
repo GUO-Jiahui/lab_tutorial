@@ -5,10 +5,10 @@ title: CoCo-Neuro Lab Tutorial
 author: CoCo-Neuro Lab
 logo: logo.png
 
-# Force re-execution of notebooks on each build.
+# Only execute notebooks that have code cells without stored outputs.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: auto
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -20,14 +20,12 @@ bibtex_bibfiles:
   - references.bib
 
 # Information about where the book exists on the web
-repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
-
-# Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+repository:
+  url: https://github.com/GUO-Jiahui/lab_tutorial  # Online location of your book
+  branch: main  # Which branch of the repository should be used when creating links
+
 html:
   static_path: ['_static']
-  use_issues_button: true
+  use_issues_button: false
   use_repository_button: true
